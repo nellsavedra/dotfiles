@@ -1,10 +1,10 @@
 [user]
 	email = ${GIT_USER_EMAIL}
+	name = ${GIT_SCREEN_NAME}
 	signingkey = ~/.ssh/${MACHINE_USERNAME}.pub
 [core]
 	editor = code --wait
 	excludesfile = ~/.gitignore
-	mergeoptions = --no-edit
 [alias]
 	br = branch
 	ch = checkout
@@ -15,16 +15,19 @@
 	cmr = cm --reuse-message=HEAD
 	cp = cherry-pick
 	dd = add .
+	develop = "!f() { git fh && git ch develop && git ll; }; f"
 	fh = fetch --all --prune
 	lg = log --oneline -n 15
 	ll = pull
-	mg = merge
+	mg = merge --no-edit --no-ff
 	ph = push -u
 	pha = ph --all
 	st = status
+	staging = "!f() { git fh && git ch staging && git ll; }; f"
 	sw = switch
 	wa = worktree add
 	wl = worktree list
+	wp = worktree prune
 	wr = worktree remove
 [push]
 	autoSetupRemote = true
