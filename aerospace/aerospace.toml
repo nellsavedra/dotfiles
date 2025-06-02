@@ -102,8 +102,8 @@ automatically-unhide-macos-hidden-apps = false
     # '''
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    comma = 'layout accordion horizontal vertical'
-    period = 'layout tiles horizontal vertical'
+    comma = 'layout accordion horizontal '
+    period = 'layout tiles horizontal '
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     tab = 'focus --boundaries-action wrap-around-the-workspace left'
@@ -162,7 +162,7 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
-run = 'layout floating'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
@@ -173,9 +173,9 @@ if.app-id = 'com.todesktop.230313mzl4w4u92'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
+if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace 3'
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace 4'
