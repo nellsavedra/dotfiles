@@ -150,7 +150,7 @@ automatically-unhide-macos-hidden-apps = false
 
     esc = ['reload-config', 'mode main']
     r = 'flatten-workspace-tree' # reset layout
-    f = 'layout floating tiling' # Toggle between floating and tiling layout
+    f = ['fullscreen', 'mode main'] # Toggle between fullscreen
 
     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
     #s = ['layout sticky tiling', 'mode main']
@@ -159,7 +159,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-down = 'join-with down'
     alt-up = 'join-with up'
     alt-right = 'join-with right'
-
+    
 [[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
 run = ['layout floating']
