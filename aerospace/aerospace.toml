@@ -162,7 +162,7 @@ automatically-unhide-macos-hidden-apps = false
     
 [[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
-run = ['layout floating']
+run = ['layout floating', 'move-node-to-workspace iTerm']
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
