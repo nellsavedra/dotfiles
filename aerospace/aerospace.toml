@@ -151,6 +151,7 @@ automatically-unhide-macos-hidden-apps = false
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'fullscreen off'] # reset layout
     f = ['fullscreen'] # Toggle between fullscreen
+    alt-f = ['layout floating tiling']
 
     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
     #s = ['layout sticky tiling', 'mode main']
