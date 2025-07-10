@@ -172,6 +172,11 @@ run = ['layout floating']
 check-further-callbacks = true
 
 [[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = ['layout floating']
+check-further-callbacks = true
+
+[[on-window-detected]]
 if.app-id = 'com.postmanlabs.mac'
 run = ['layout floating']
 check-further-callbacks = true
