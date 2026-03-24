@@ -142,8 +142,9 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     # No commands
                     
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-    # No commands
+    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-monitor
+    ctrl-left = 'move-node-to-monitor --focus-follows-window left'
+    ctrl-right = 'move-node-to-monitor --focus-follows-window right'
     
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     # No commands
@@ -177,11 +178,6 @@ run = ['layout floating']
 check-further-callbacks = true
 
 [[on-window-detected]]
-if.app-id = 'com.postmanlabs.mac'
-run = ['layout floating']
-check-further-callbacks = true
-
-[[on-window-detected]]
 if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace 1'
 check-further-callbacks = true
@@ -199,9 +195,4 @@ check-further-callbacks = true
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace 4'
-check-further-callbacks = true
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iCal'
-run = ['layout floating']
 check-further-callbacks = true
